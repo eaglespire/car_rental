@@ -65,7 +65,7 @@
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                     <li class="nav-item">
-                        <a href="{{ route('admin.dashboard') }}" class="nav-link active">
+                        <a href="{{ route('admin.dashboard') }}" class="nav-link {{ set_active_url('admin.dashboard') }}">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>
                                 Dashboard
@@ -74,7 +74,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('admin.categories.index') }}" class="nav-link">
+                        <a href="{{ route('admin.categories.index') }}" class="nav-link {{ set_active_url('admin.categories.index') }}">
                             <i class="nav-icon fas fa-paper-plane"></i>
                             <p>
                                 Categories
@@ -84,7 +84,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="{{ route('admin.testimonials.index') }}" class="nav-link">
+                        <a href="{{ route('admin.testimonials.index') }}" class="nav-link {{ set_active_url('admin.testimonials.index') }}">
                             <i class="nav-icon fas fa-paper-plane"></i>
                             <p>
                                 Testimonials
@@ -94,10 +94,20 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="{{ route('admin.cars.index') }}" class="nav-link">
+                        <a href="{{ route('admin.cars.index') }}" class="nav-link {{ set_active_url('admin.cars.index') }}">
                             <i class="nav-icon fas fa-paper-plane"></i>
                             <p>
                                 Cars
+                                <i class="right fas fa-angle-right"></i>
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ route('admin.bookings.index') }}" class="nav-link {{ set_active_url('admin.bookings.index') }}">
+                            <i class="nav-icon fas fa-paper-plane"></i>
+                            <p>
+                                Bookings
                                 <i class="right fas fa-angle-right"></i>
                             </p>
                         </a>

@@ -58,7 +58,7 @@ class CarsController extends Controller
             $fileNameToStore = "$fileName.$fileExt";
             $request->file('image')->storeAs('cars',$fileNameToStore,'public');
             $image = public_path("storage/cars/$fileNameToStore");
-            Image::make($image)->resize(600,400)->save();
+            Image::make($image)->resize(720,400)->save();
         }
         try {
             Car::create([
